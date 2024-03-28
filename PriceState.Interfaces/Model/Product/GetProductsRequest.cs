@@ -2,7 +2,7 @@
 
 namespace PriceState.Interfaces.Model.Product;
 
-public class GetProductsRequest
+public class GetProductsRequest: IPaginationRequest
 {
     public string Name { get; set; }
 

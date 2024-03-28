@@ -4,15 +4,15 @@ using PriceState.Interfaces.Model.Product;
 
 namespace PriceState.Interfaces;
 
-public class IOrganizationService
+public interface IOrganizationService
 {
-    Task<Organization?> CreateOrganizationAsync(string name);
+   Task<Organization?> CreateOrganizationAsync(int regionId, string name);
 
     Task<GetOrganizationsResponse> GetAllOrganizationAsync(GetOrganizationsRequest request);
 
-    Task<Organization?> GetOrganizationAsync(GetOrganizationRequest request);
+    Task<GetOrganizationsResponse?> GetOrganizationAsync(GetOrganizationRequest request);
 
-    Task RenameOrganizationAsync(long ProductId, string name);
+    Task RenameOrganizationAsync(long organizationId, string name);
 
-    Task DeleteOrganizationAsync(long ProductId);
+    Task DeleteOrganizationAsync(long organizationId);
 }

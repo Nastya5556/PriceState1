@@ -2,7 +2,7 @@
 
 namespace PriceState.Interfaces.Model.Unit;
 
-public class GetUnitRequest
+public class GetUnitRequest: IPaginationRequest
 {
     public long? UnitId { get; set; } = null;
 

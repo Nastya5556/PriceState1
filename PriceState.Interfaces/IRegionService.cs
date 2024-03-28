@@ -4,15 +4,15 @@ using PriceState.Interfaces.Model.Region;
 
 namespace PriceState.Interfaces;
 
-public class IRegionService
+public interface IRegionService
 {
     Task<Region?> CreateRegionAsync(string name);
 
     Task<GetRegionsResponse> GetAllRegionAsync(GetRegionsRequest request);
 
-    Task<Region?> GetRegionAsync(GetRegionRequest request);
+    Task<GetRegionsResponse?> GetRegionAsync(GetRegionRequest request);
 
-    Task RenameRegionAsync(long RegionId, string name);
+    Task RenameRegionAsync(int regionId, string name);
 
-    Task DeleteRegionAsync(long RegionId);
+    Task DeleteRegionAsync(int regionId);
 }

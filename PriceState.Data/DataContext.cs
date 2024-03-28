@@ -12,7 +12,7 @@ public class DataContext:DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=PriceState;Username=postgres;Password=1");
     public DbSet<Organization> Organizations { get; set; }
 
-    public DbSet<PriceOrganization> DpPriceOrganizations { get; set; }
+    public DbSet<PriceOrganization> PriceOrganizations { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Product> Products { get; set; }
 

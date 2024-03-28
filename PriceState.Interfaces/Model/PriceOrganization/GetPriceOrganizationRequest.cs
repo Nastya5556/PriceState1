@@ -2,7 +2,7 @@
 
 namespace PriceState.Interfaces.Model.PriceOrganization;
 
-public class GetPriceOrganizationRequest
+public class GetPriceOrganizationRequest: IPaginationRequest
 {
 
     public DateTime Date { get; set; }

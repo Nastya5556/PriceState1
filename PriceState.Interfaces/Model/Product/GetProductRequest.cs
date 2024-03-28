@@ -2,7 +2,7 @@
 
 namespace PriceState.Interfaces.Model.Product;
 
-public class GetProductRequest
+public class GetProductRequest: IPaginationRequest
 {
     public long? ProductId { get; set; } = null;
 

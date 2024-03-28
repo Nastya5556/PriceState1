@@ -2,7 +2,7 @@
 
 namespace PriceState.Interfaces.Model.Region;
 
-public class GetRegionRequest
+public class GetRegionRequest: IPaginationRequest
 {
     public long? RegionId { get; set; } = null;
 

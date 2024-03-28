@@ -3,7 +3,7 @@ using PriceState.Interfaces.Model.User;
 
 namespace PriceState.Interfaces;
 
-public class IUserService
+public interface IUserService
 {
     Task<BaseResponse<LoginResponse>> Login(LoginRequest request);
 

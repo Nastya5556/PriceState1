@@ -3,7 +3,7 @@ using PriceState.Interfaces.Pagination;
 
 namespace PriceState.Interfaces.Model.PriceOrganization;
 
-public class GetPriceOrganizationsResponse
+public class GetPriceOrganizationsResponse: IPaginationResponse<PriceOrganizationModel>
 {
     public Page Page { get; set; } = new Page();
 

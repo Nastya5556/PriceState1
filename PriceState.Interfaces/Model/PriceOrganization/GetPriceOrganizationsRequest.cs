@@ -3,7 +3,7 @@ using PriceState.Interfaces.Pagination;
 
 namespace PriceState.Interfaces.Model.PriceOrganization;
 
-public class GetPriceOrganizationsRequest
+public class GetPriceOrganizationsRequest: IPaginationRequest
 {
     public long? OrganizationId { get; set; } = null;
     

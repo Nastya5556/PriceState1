@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("PriceState.Interfaces")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("PriceState.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc5882fb1642b9c7befa2c3c3159469ae7287339")]
-[assembly: System.Reflection.AssemblyProductAttribute("PriceState.Interfaces")]
-[assembly: System.Reflection.AssemblyTitleAttribute("PriceState.Interfaces")]
+[assembly: System.Reflection.AssemblyProductAttribute("PriceState.Services")]
+[assembly: System.Reflection.AssemblyTitleAttribute("PriceState.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

@@ -2,7 +2,7 @@
 
 namespace PriceState.Interfaces.Model.Region;
 
-public class GetRegionsResponse
+public class GetRegionsResponse: IPaginationResponse<RegionModel>
 {
     public Page Page { get; set; } = new Page();
 

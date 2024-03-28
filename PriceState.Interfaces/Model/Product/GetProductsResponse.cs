@@ -3,7 +3,7 @@ using PriceState.Interfaces.Pagination;
 
 namespace PriceState.Interfaces.Model.Product;
 
-public class GetProductsResponse
+public class GetProductsResponse: IPaginationResponse<ProductModel>
 {
     public Page Page { get; set; } = new Page();
 
